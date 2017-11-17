@@ -21,7 +21,7 @@
       "website": "",
       "startDate": "2016-11-01",
       "highlights": ["Assist in the development of HelloWell, a consumer facing EMR portal, as a programmer and analyst.","Mentor developers in order for them to grow outside their comfort zone.","Implement automated Unit Testing and System Testing to improve reliability.","Support complex marketing websites with thousands of pages while maintaining reliability and quality.","Technologies: Symfony, React, jQuery, Drupal"],
-      "highlights": []
+      "summary": ""
     },
     {
       "company": "TEKsystems",
@@ -29,7 +29,7 @@
       "website": "",
       "startDate": "2016-04-01",
       "highlights": ["Assisted in the development of an Order Management System (OMS) where shops can create orders or receive orders via API.  Developed using NodeJs, ReactJs and MongoDB. ","Optimized an Excel generating module which had severe memory limitations.  We could originally write up to 50 thousand records without consuming vast amounts of memory, after optimization we could write more than 3 million records.","Discovered serious session bugs by looking through the codes, proposed changes and helped implement them along with the team lead.","Unit Tested small critical portions of the application."],
-      "summary": [],
+      "summary": "",
       "endDate": "2016-11-01"
     },
     {
@@ -38,7 +38,7 @@
       "website": "",
       "startDate": "2015-10-01",
       "highlights": ["Helped develop and Order management system utilizing Laravel and AngularJs with a small Node server which enabled real-time data.","Refactored and migrated to angular a query builder which generated a user friendly interface from a complex configuration array containing over 200 data points and over 1000 possible values."],
-      "summary": [],
+      "summary": "",
       "endDate": "2016-04-01"
     },
     {
@@ -47,7 +47,7 @@
       "website": "",
       "startDate": "2013-10-01",
       "highlights": ["Achieved increased capacity and accuracy in both US and Global operations with technological solutions.","Simplified processes to create reports monitored by FINRA.","Utilized data from multiple systems to identify discrepancies and potential payment problems.","Designed and implemented databases and relationships using SQL to discover discrepancies between duties owed/paid to reduce over payments and fines.","Assembled critical data when regulatory changes took place."],
-      "summary": [],
+      "summary": "",
       "endDate": "2014-10-01"
     },
     {
@@ -56,7 +56,7 @@
       "website": "",
       "startDate": "2009-11-01",
       "highlights": ["Attempted to jumpstart online transportation retailing services to conduct B2C transactions for bus transportation companies"],
-      "summary": [],
+      "summary": "",
       "endDate": "2013-03-01"
     }
   ],
