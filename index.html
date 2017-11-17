@@ -9,562 +9,700 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ricardo Spear</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" media="all">
-  <style>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans">
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/FortAwesome/Font-Awesome/307323a6a7fe69b7018cb49d2b7e43e1f4b6c92b/css/font-awesome.min.css">
+  <style type="text/css">
+    /*<!--*/
+
     body {
-      font-family: 'Lato';
-      background-image: url("https://cdn.backgroundhost.com/backgrounds/subtlepatterns/snow.png");
+      font-size: 62.5%;
+      font-family: "Montserrat", sans-serif;
+      background-color: #fff;
+      color: #131313;
     }
 
-    .oswald-font {
-      font-family: 'oswald';
-      vertical-align: bottom;
+    .main-wrap {
+      max-width: 960px;
+      margin: 0 auto;
     }
 
-    .name {
-      text-transform: uppercase;
+    a {
+      color: #131313;
+      text-decoration: none;
+      -webkit-transition: color 0.175s ease 0.05s;
+      -moz-transition: color 0.175s ease 0.05s;
+      transition: color 0.175s ease 0.05s;
     }
 
-    a:hover {
+    a:visited {
+      color: #aaaaaa;
+    }
+
+    a:hover,
+    a:focus {
+      color: #777777;
       text-decoration: none;
     }
 
-    .link-github {
-      color: #454545;
-    }
-
-    .link-github:hover {
-      color: black;
-    }
-
-    .link-twitter {
-      color: #33CCFF;
-    }
-
-    .social-link {
-      margin-left: 5px;
-    }
-
-    .social-link:first-child {
-      margin-left: 0;
-    }
-
-    .link-blog {
-      color: rgb(243, 111, 36);
-    }
-
-    .link-blog:hover {
-      color: rgb(211, 97, 32);
-    }
-
-    .summary {
-      font-size: 1.2em;
-      margin-top: 2em;
-    }
-
-    .wip {
-      position: absolute;
-      right: 0;
-    }
-
-    .item-detail h3 {
-      margin-top: 0px;
-      vertical-align: middle;
-    }
-
-    .item-detail .company {
-      font-size: 18px;
-    }
-
-    .item {
-      border-bottom: 1px solid #eee;
-      margin-bottom: 10px;
-      padding-bottom: 10px;
-    }
-
-    .item,
-    .no-break-inside {
-      page-break-inside: avoid;
+    .header {
+      text-align: center;
+      font-size: 2em;
+      margin: 0 10%;
     }
 
     .section {
-      orphans: 10;
-      widows: 10;
+      padding: 1em 1em 0 1em;
+      margin-bottom: 1em;
+    }
+
+    .section .fa.left {
+      margin-right: 0.25em;
+    }
+
+    h1 {
+      color: #131313;
+      font-size: 2em;
+      margin: 1em 0 0;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 3.5em;
+      margin: 0.83em 0;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      color: #4d4d4d;
+      font-size: 1.75em;
+      margin: 1em 0 0;
+    }
+
+    h4 {
+      color: #666666;
+      font-size: 1.25em;
+      margin: 0 0 1em;
+    }
+
+    .profile {
+      font-family: "Montserrat";
+      font-size: 1em;
+      margin: 0;
+    }
+
+    .profile-name {
+      display: none;
+    }
+
+    .contact-header {
+      font-weight: bold;
+    }
+
+    .contact-list li,
+    .contact-list a {
+      color: #2b2b2b;
+    }
+
+    .contact-list a:hover,
+    .contact-list a:focus {
+      color: #777777;
+    }
+
+    .label {
+      margin-top: 0;
+      margin-bottom: 0.25em;
+    }
+
+    .fa {
+      font-size: 2em;
+    }
+
+    .left {
+      font-size: 1em;
+    }
+
+    .main {
+      margin: 0 10% 5em;
+    }
+
+    .skills {
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      color: #565656;
+      font-family: "Open Sans";
+      font-size: 1.5em;
+    }
+
+    li {
+      color: #565656;
+      font-family: "Open Sans";
+      font-size: 1.5em;
+    }
+
+    .contact-list li {
+      display: inline-block;
+    }
+
+    .contact-list li:first-child:before {
+      content: '';
+    }
+
+    .list-lines,
+    .list-lines li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .list-lines li {
+      font-family: "Montserrat";
+      font-size: 1em;
+    }
+
+    .list-set,
+    .list-set li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .list-set li {
+      font-family: "Montserrat";
+      display: inline-block;
+    }
+
+    .list-set li a {
+      display: inline-block;
+    }
+
+    .list-set li .fa {
+      min-width: 1em;
+      min-height: 1em;
+    }
+
+    /*Minor adjustment to icons.*/
+
+    .list-set li .fa-stack-overflow:before {
+      font-size: 0.9em;
+      position: relative;
+      top: -0.05em;
+    }
+
+    .list-set.keywords {
+      overflow: hidden;
+    }
+
+    .list-set.keywords li {
+      background-color: #444444;
+      color: #eeeeee;
+      padding: 0.6em 0.85em;
+      font-size: 1.3em;
+      display: inline-block;
+      margin: 1px;
+      float: left;
+    }
+
+    .profiles-list {
+      margin-top: 0.75em;
+    }
+
+    blockquote {
+      margin: 2em 1em;
+      padding: 1em;
+      border-left: 0.75em solid #666666;
+      font-family: "Open Sans";
+      font-size: 1.5em;
+    }
+
+    blockquote .name {
+      font-weight: bold;
+      font-family: "Montserrat";
+      margin-top: 1em;
+    }
+
+    /*::-moz-selection {
+	background: #fff;
+}
+::selection {
+	background: #fff;*/
+
+    }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 50%;
+      }
+      .header {
+        margin: 0 5%;
+      }
+      .main {
+        margin: 0 5%;
+      }
     }
 
     @media print {
-      @page {
-        margin: 0.75cm 0.75cm 3cm 0.75cm;
+      body {
+        background: #FFFFFF;
+        color: #171717;
       }
-      a[href]:after {
-        content: "";
+      .main-wrap {
+        width: 100%;
       }
-      .badge {
-        font-weight: normal;
+      .main {
+        margin: 0 0 1em 0;
       }
-      .item {
-        border-bottom: 0px;
-        margin-bottom: 0px;
-        padding-bottom: 5px;
+      .section {
+        page-break-inside: avoid;
       }
-      .social-links-wrapper {
+      .main .section:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        color: #555555;
+      }
+      a:visited {
+        color: #555555;
+      }
+      a:hover,
+      a:focus {
+        color: #555555;
+      }
+      h1 {
+        color: #111111;
+        margin-top: 0.5em;
+      }
+      h2 {
+        margin: 0 0 0.25em;
+      }
+      h3 {
+        color: #555555;
+      }
+      h4 {
+        color: #bbbbbb;
+      }
+      .contact-list li,
+      .contact-list a {
+        color: #111111;
+      }
+      p {
+        color: #555555;
+      }
+      li {
+        color: #555555;
+      }
+      .list-set.keywords li {
+        background-color: transparent;
+        color: #555555;
+        border: 1px solid #aaaaaa;
+      }
+      blockquote {
+        border-color: #999999;
+      }
+      .profiles-list {
+        display: table;
+        margin: 0.5em auto 0;
+      }
+      .profiles-list li {
+        display: table-row-group;
+        font-size: 0.75em;
+      }
+      .profiles-list li a {
+        display: table-row;
+      }
+      .profiles-list li a:after {
+        display: table-cell;
+        content: attr(href);
+        text-align: left;
+        padding: 0 0 0 0.5em;
+      }
+      .profiles-list li a .fa {
+        font-size: 1.5em;
+      }
+      .profiles-list li a>* {
+        display: table-cell;
+      }
+      .profiles-list li a .profile-name {
         display: none;
       }
+      * {
+        /* Avoid printing the color at the start of the transition (Chrome issue). */
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        transition: none !important;
+
+      }
     }
+
+    /*-->*/
   </style>
+  <!--[if lt IE 9]>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
 
 
-  <div class="container">
-    <div class="row section">
-      <div class="col-xs-12">
-        <h1 class="name oswald-font">Ricardo Spear</h1>
-      </div>
-      <div class="location col-xs-6">
-        <span class="fa fa-map-marker"></span>&nbsp; 2796 Grassmoor Loop, Apopka, Fl, 32712, US
-        <br>
-      </div>
-      <div class="location col-xs-6">
-        <span class="social-links-wrapper">
-        </span>
-      </div>
-    </div>
-    <div class="row section">
-      <p class="summary">
-        <span class="fa fa-quote-left"></span>&nbsp; Technology oriented business analyst focused on proposing and implementing solutions to increase operations/reporting
-        efficiency and accuracy. Looking for a place where I can contribute and continue to expand both my technological
-        and business background. Once I find the right place, I intend to obtain a masters in computer science. &nbsp;
-        <span class="fa fa-quote-right"></span>
-      </p>
-    </div>
-    <div class="row section">
-      <div class="col-xs-12">
-        <h2 class="oswald-font">
-          <span class="fa fa-briefcase"></span>&nbsp; Work</h2>
-      </div>
-      <div class="row item">
-        <div class="col-xs-2 text-right">Nov&nbsp;2016 – present</div>
-        <div class="item-detail col-xs-10">
-          <h3>
-            Web Programmer/Analyst Senior •
-            <a target="_blank" href="" class="company">Adventist Health System</a>
-          </h3>
-          <p class="text-muted text-justify"></p>
+  <div class="main-wrap">
+    <header class="header">
+      <h1>Ricardo Spear</h1>
+      <h3 class="label">Fullstack | Laravel | NodeJs | Angular | React - Developer for Adventist Health Systems</h3>
+      <ul id="contact" class="contact-list list-lines">
+      </ul>
+      <ul id="profiles" class="profiles-list list-set">
+      </ul>
+    </header>
+    <main role="main" class="main">
+      <section id="about" class="section">
+        <h2>
+          <i class="fa fa-user left"></i>About</h2>
+        <p>Technology oriented business analyst focused on proposing and implementing solutions to increase operations/reporting
+          efficiency and accuracy. Looking for a place where I can contribute and continue to expand both my technological
+          and business background. Once I find the right place, I intend to obtain a masters in computer science.</p>
+      </section>
+      <section id="work" class="section">
+        <h2>
+          <i class="fa fa-suitcase left"></i>Work Experience</h2>
+        <section class="section-sub section-sub-job">
+          <h3>Web Programmer/Analyst Senior, Adventist Health System</h3>
+          <h4>November 2016 - Present</h4>
+          <p></p>
+          <h4>Highlights</h4>
           <ul>
-            <li class="text-justify">Assist in the development of HelloWell, a consumer facing EMR portal, as a programmer and analyst.</li>
-            <li class="text-justify">Mentor developers in order for them to grow outside their comfort zone.</li>
-            <li class="text-justify">Implement automated Unit Testing and System Testing to improve reliability.</li>
-            <li class="text-justify">Support complex marketing websites with thousands of pages while maintaining reliability and quality.</li>
-            <li class="text-justify">Technologies: Symfony, React, jQuery, Drupal</li>
+            <li>Assist in the development of HelloWell, a consumer facing EMR portal, as a programmer and analyst.</li>
+            <li>Mentor developers in order for them to grow outside their comfort zone.</li>
+            <li>Implement automated Unit Testing and System Testing to improve reliability.</li>
+            <li>Support complex marketing websites with thousands of pages while maintaining reliability and quality.</li>
+            <li>Technologies: Symfony, React, jQuery, Drupal</li>
           </ul>
-        </div>
-      </div>
-      <div class="row item">
-        <div class="col-xs-2 text-right">Apr&nbsp;2016 – Nov&nbsp;2016</div>
-        <div class="item-detail col-xs-10">
-          <h3>
-            Software Developer at AAA •
-            <a target="_blank" href="" class="company">TEKsystems</a>
-          </h3>
-          <p class="text-muted text-justify"></p>
+        </section>
+        <section class="section-sub section-sub-job">
+          <h3>Software Developer at AAA, TEKsystems</h3>
+          <h4>April 2016 - November 2016</h4>
+          <p></p>
+          <h4>Highlights</h4>
           <ul>
-            <li class="text-justify">Assisted in the development of an Order Management System (OMS) where shops can create orders or receive orders
+            <li>Assisted in the development of an Order Management System (OMS) where shops can create orders or receive orders
               via API. Developed using NodeJs, ReactJs and MongoDB. </li>
-            <li class="text-justify">Optimized an Excel generating module which had severe memory limitations. We could originally write up to 50
+            <li>Optimized an Excel generating module which had severe memory limitations. We could originally write up to 50
               thousand records without consuming vast amounts of memory, after optimization we could write more than 3 million
               records.</li>
-            <li class="text-justify">Discovered serious session bugs by looking through the codes, proposed changes and helped implement them along
+            <li>Discovered serious session bugs by looking through the codes, proposed changes and helped implement them along
               with the team lead.</li>
-            <li class="text-justify">Unit Tested small critical portions of the application.</li>
+            <li>Unit Tested small critical portions of the application.</li>
           </ul>
-        </div>
-      </div>
-      <div class="row item">
-        <div class="col-xs-2 text-right">Oct&nbsp;2015 – Apr&nbsp;2016</div>
-        <div class="item-detail col-xs-10">
-          <h3>
-            PHP Developer •
-            <a target="_blank" href="" class="company">BMI Elite</a>
-          </h3>
-          <p class="text-muted text-justify"></p>
+        </section>
+        <section class="section-sub section-sub-job">
+          <h3>PHP Developer, BMI Elite</h3>
+          <h4>October 2015 - April 2016</h4>
+          <p></p>
+          <h4>Highlights</h4>
           <ul>
-            <li class="text-justify">Helped develop and Order management system utilizing Laravel and AngularJs with a small Node server which enabled
+            <li>Helped develop and Order management system utilizing Laravel and AngularJs with a small Node server which enabled
               real-time data.</li>
-            <li class="text-justify">Refactored and migrated to angular a query builder which generated a user friendly interface from a complex configuration
+            <li>Refactored and migrated to angular a query builder which generated a user friendly interface from a complex configuration
               array containing over 200 data points and over 1000 possible values.</li>
           </ul>
-        </div>
-      </div>
-      <div class="row item">
-        <div class="col-xs-2 text-right">Oct&nbsp;2013 – Oct&nbsp;2014</div>
-        <div class="item-detail col-xs-10">
-          <h3>
-            Operations Associate/International Allocations •
-            <a target="_blank" href="" class="company">ConvergEx Group</a>
-          </h3>
-          <p class="text-muted text-justify"></p>
+        </section>
+        <section class="section-sub section-sub-job">
+          <h3>Operations Associate/International Allocations, ConvergEx Group</h3>
+          <h4>October 2013 - October 2014</h4>
+          <p></p>
+          <h4>Highlights</h4>
           <ul>
-            <li class="text-justify">Achieved increased capacity and accuracy in both US and Global operations with technological solutions.</li>
-            <li class="text-justify">Simplified processes to create reports monitored by FINRA.</li>
-            <li class="text-justify">Utilized data from multiple systems to identify discrepancies and potential payment problems.</li>
-            <li class="text-justify">Designed and implemented databases and relationships using SQL to discover discrepancies between duties owed/paid
+            <li>Achieved increased capacity and accuracy in both US and Global operations with technological solutions.</li>
+            <li>Simplified processes to create reports monitored by FINRA.</li>
+            <li>Utilized data from multiple systems to identify discrepancies and potential payment problems.</li>
+            <li>Designed and implemented databases and relationships using SQL to discover discrepancies between duties owed/paid
               to reduce over payments and fines.</li>
-            <li class="text-justify">Assembled critical data when regulatory changes took place.</li>
+            <li>Assembled critical data when regulatory changes took place.</li>
           </ul>
-        </div>
-      </div>
-      <div class="row item">
-        <div class="col-xs-2 text-right">Nov&nbsp;2009 – Mar&nbsp;2013</div>
-        <div class="item-detail col-xs-10">
-          <h3>
-            PedidosRA Founder •
-            <a target="_blank" href="" class="company">PedidosRA</a>
-          </h3>
-          <p class="text-muted text-justify"></p>
+        </section>
+        <section class="section-sub section-sub-job">
+          <h3>PedidosRA Founder, PedidosRA</h3>
+          <h4>November 2009 - March 2013</h4>
+          <p></p>
+          <h4>Highlights</h4>
           <ul>
-            <li class="text-justify">Attempted to jumpstart online transportation retailing services to conduct B2C transactions for bus transportation
+            <li>Attempted to jumpstart online transportation retailing services to conduct B2C transactions for bus transportation
               companies</li>
           </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row section">
-      <div class="col-xs-12">
-        <h2 class="oswald-font">
-          <span class="fa fa-university"></span>&nbsp; Education</h2>
-      </div>
-      <div class="row item">
-        <div class="col-xs-2 text-right">Jan&nbsp;2008 – Jan&nbsp;2011</div>
-        <div class="item-detail col-xs-10">
-          <h3>Bachelor of Business Administration (B.B.A.)</h3>
-          <h4>University of Central Florida - College of Business Administration, </h4>
-          <ul>
+        </section>
+      </section>
+      <section id="education" class="section">
+        <h2>
+          <i class="fa fa-graduation-cap left"></i>Education</h2>
+        <section class="section-sub section-sub-education">
+          <h3>Bachelor of Business Administration (B.B.A.) - University of Central Florida - College of Business Administration</h3>
+          <h3>University of Central Florida - College of Business Administration</h3>
+          <h4>January 2008 - January 2011</h4>
+          <p></p>
+        </section>
+      </section>
+      <section id="skills" class="section">
+        <h2>
+          <i class="fa fa-tasks left"></i>Skills</h2>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Social Networking</h3>
+          <ul class="list-set keywords">
           </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row section">
-      <div class="col-xs-12">
-        <h2 class="oswald-font">
-          <span class="fa fa-mortar-board"></span>&nbsp; Skills</h2>
-      </div>
-      <div class="row">
-        <div class="col-xs-6 no-break-inside">
-          <h4> Social Networking </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Network Administration </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Mathematics </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> HTML5 </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> SQL </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> MySQL </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Linux </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Unit Testing </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> PHPUnit </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Software Development </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Programming </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Bower </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> npm </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> React.js </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> AngularJS </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> MongoDB </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Socket.io </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Laravel </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Node.js </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Git </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> CSS </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> JavaScript </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Web Development </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> PHP </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Version Control </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Web Applications </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Microsoft Excel </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Symfony Framework </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Management </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Microsoft Office </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> HTML </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Strategy </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Financial Reporting </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Business Analysis </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Leadership </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Microsoft Word </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Strategic Planning </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Logistics </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Customer Service </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Visual Basic </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Process Improvement </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Trade Compliance </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Social Media </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Business Planning </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Team Leadership </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Financial Analysis </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Public Speaking </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Social Media Marketing </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> Web Services </h4>
-          <h5>
-            <b></b>
-          </h5>
-        </div>
-      </div>
-    </div>
-    <div class="row section">
-      <div class="col-xs-12">
-        <h2 class="oswald-font">
-          <span class="fa fa-language"></span>&nbsp; Languages</h2>
-      </div>
-      <div class="row">
-        <div class="col-xs-6 no-break-inside">
-          <h4> Spanish </h4>
-          <h5>Fluent</h5>
-        </div>
-        <div class="col-xs-6 no-break-inside">
-          <h4> English </h4>
-          <h5>Fluent</h5>
-        </div>
-      </div>
-    </div>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Network Administration</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Mathematics</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">HTML5</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">SQL</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">MySQL</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Linux</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Unit Testing</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">PHPUnit</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Software Development</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Programming</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Bower</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">npm</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">React.js</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">AngularJS</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">MongoDB</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Socket.io</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Laravel</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Node.js</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Git</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">CSS</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">JavaScript</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Web Development</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">PHP</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Version Control</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Web Applications</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Microsoft Excel</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Symfony Framework</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Management</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Microsoft Office</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">HTML</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Strategy</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Financial Reporting</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Business Analysis</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Leadership</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Microsoft Word</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Strategic Planning</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Logistics</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Customer Service</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Visual Basic</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Process Improvement</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Trade Compliance</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Social Media</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Business Planning</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Team Leadership</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Financial Analysis</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Public Speaking</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Social Media Marketing</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+        <section class="section-sub section-sub-skill">
+          <h3 class="skills">Web Services</h3>
+          <ul class="list-set keywords">
+          </ul>
+        </section>
+      </section>
+      <section id="languages" class="section">
+        <h2>
+          <i class="fa fa-quote-left left"></i>Languages</h2>
+        <section class="section-sub section-sub-language">
+          <h3>Spanish</h3>
+          <p>Fluency: Fluent</p>
+        </section>
+        <section class="section-sub section-sub-language">
+          <h3>English</h3>
+          <p>Fluency: Fluent</p>
+        </section>
+      </section>
+    </main>
   </div>
-
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 
 
 </body>
