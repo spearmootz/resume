@@ -1,0 +1,340 @@
+{
+  "basics": {
+    "name": "Ricardo Spear",
+    "label": "Fullstack | Laravel | NodeJs | Angular | React - Developer for Adventist Health Systems",
+    "phone": "",
+    "website": "",
+    "summary": "Technology oriented business analyst focused on proposing and implementing solutions to increase operations/reporting efficiency and accuracy.  Looking for a place where I can contribute and continue to expand both my technological and business background.  Once I find the right place, I intend to obtain a masters in computer science.",
+    "location": {
+      "address": "2796 Grassmoor Loop",
+      "postalCode": "32712",
+      "city": "Apopka",
+      "countryCode": "US",
+      "region": "Fl"
+    },
+    "profiles": []
+  },
+  "work": [
+    {
+      "company": "Adventist Health System",
+      "position": "Web Programmer/Analyst Senior",
+      "website": "",
+      "startDate": "2016-11-01",
+      "summary": "Assist in the development of HelloWell, a consumer facing EMR portal, as a programmer and analyst.\n\nMentor developers in order for them to grow outside their comfort zone.\n\nImplement automated Unit Testing and System Testing to improve reliability.\n\nSupport complex marketing websites with thousands of pages while maintaining reliability and quality.\n\nTechnologies: Symfony, React, jQuery, Drupal",
+      "highlights": []
+    },
+    {
+      "company": "TEKsystems",
+      "position": "Software Developer at AAA",
+      "website": "",
+      "startDate": "2016-04-01",
+      "summary": "Assisted in the development of an Order Management System (OMS) where shops can create orders or receive orders via API.  Developed using NodeJs, ReactJs and MongoDB. \n\nOptimized an Excel generating module which had severe memory limitations.  We could originally write up to 50 thousand records without consuming vast amounts of memory, after optimization we could write more than 3 million records.\n\nDiscovered serious session bugs by looking through the codes, proposed changes and helped implement them along with the team lead.\n\nUnit Tested small critical portions of the application.",
+      "highlights": [],
+      "endDate": "2016-11-01"
+    },
+    {
+      "company": "BMI Elite",
+      "position": "PHP Developer",
+      "website": "",
+      "startDate": "2015-10-01",
+      "summary": "Helped develop and Order management system utilizing Laravel and AngularJs with a small Node server which enabled real-time data.\n\nRefactored and migrated to angular a query builder which generated a user friendly interface from a complex configuration array containing over 200 data points and over 1000 possible values.",
+      "highlights": [],
+      "endDate": "2016-04-01"
+    },
+    {
+      "company": "BeeSeen Media LLC",
+      "position": "Founder",
+      "website": "",
+      "startDate": "2014-10-01",
+      "summary": "Filed a patent in 2015 for a method to provide customers with a new experience by allowing a customer representative to dynamically insert/replace content via ajax calls.  This allows customer representatives to display product/diagnostic information without requiring the customer to take action.\n\nDeveloped (Currently in beta) a social network managing platform called Social Ninjas which allows customers to schedule posts onto many Social Media sites, built using Laravel and other repositories.  The innovation is that, by using a complex system, Social Ninja has the capability to make posts on Instagram on behalf of the user.  \n\nDeveloped and released an Android app called Zero Taboos which is built using Ionic Framework and a PHP backend.",
+      "highlights": []
+    },
+    {
+      "company": "ConvergEx Group",
+      "position": "Operations Associate/International Allocations",
+      "website": "",
+      "startDate": "2013-10-01",
+      "summary": "Achieved increased capacity and accuracy in both US and Global operations with technological solutions.\n\nSimplified processes to create reports monitored by FINRA.\n\nUtilized data from multiple systems to identify discrepancies and potential payment problems.\n\nDesigned and implemented databases and relationships using SQL to discover discrepancies between duties owed/paid to reduce over payments and fines.\n\nAssembled critical data when regulatory changes took place.",
+      "highlights": [],
+      "endDate": "2014-10-01"
+    },
+    {
+      "company": "PedidosRA",
+      "position": "PedidosRA Founder",
+      "website": "",
+      "startDate": "2009-11-01",
+      "summary": "Attempted to jumpstart online transportation retailing services to conduct B2C transactions for bus transportation companies",
+      "highlights": [],
+      "endDate": "2013-03-01"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Central Florida - College of Business Administration",
+      "area": "",
+      "studyType": "Bachelor of Business Administration (B.B.A.)",
+      "startDate": "2008-01-01",
+      "gpa": "",
+      "courses": [],
+      "endDate": "2011-01-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Social Networking",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Network Administration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Mathematics",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML5",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Unit Testing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PHPUnit",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Programming",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Bower",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "npm",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "React.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "AngularJS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MongoDB",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Socket.io",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Laravel",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Node.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PHP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Version Control",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Applications",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Excel",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Symfony Framework",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Office",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Strategy",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Financial Reporting",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Business Analysis",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Leadership",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Word",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Strategic Planning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Logistics",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Customer Service",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Visual Basic",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Process Improvement",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Trade Compliance",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Social Media",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Business Planning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Team Leadership",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Financial Analysis",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Public Speaking",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Social Media Marketing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Services",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "references": []
+}
