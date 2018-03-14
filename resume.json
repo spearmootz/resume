@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Ricardo Spear",
-    "label": "Fullstack | Laravel | NodeJs | Angular | React - Developer for Adventist Health Systems",
+    "label": "Fullstack | NodeJS | React | Laravel",
     "phone": "",
     "website": "",
     "summary": "Technology oriented business analyst focused on proposing and implementing solutions to increase operations/reporting efficiency and accuracy.  Looking for a place where I can contribute and continue to expand both my technological and business background.  Once I find the right place, I intend to obtain a masters in computer science.",
@@ -15,12 +15,22 @@
     "profiles": []
   },
   "work": [
+    
+    {
+      "company": "Spear Consultants LLC",
+      "position": "Consultant",
+      "website": "",
+      "startDate": "2017-11-01",
+      "summary": "Develop Automated Business Processes which required complex data gathering and manipulation was required saving countless man hours while having a more reliable and documented process.\nInsanely fast automations while using low resources by utilizing streaming technologies.\nData Validation, Data Importing, Reporting, SFTP to external servers, watching for incoming STFP files",
+      "highlights": []
+    },
     {
       "company": "Adventist Health System",
       "position": "Web Programmer/Analyst Senior",
       "website": "",
       "startDate": "2016-11-01",
-      "summary": "Assist in the development of HelloWell, a consumer facing EMR portal, as a programmer and analyst.\n\nMentor developers in order for them to grow outside their comfort zone.\n\nImplement automated Unit Testing and System Testing to improve reliability.\n\nSupport complex marketing websites with thousands of pages while maintaining reliability and quality.\n\nTechnologies: Symfony, React, jQuery, Drupal",
+      "endDate": "2018-03-09"
+      "summary": "Develop HelloWell, a consumer facing EMR portal, as a programmer and analyst using Symfony, and React.\nSolely developed the Native HelloWell App using React Native featuring features such as Touch ID for both android and iOS\nImplement End-End automated and Unit Testing to improve reliability.\nDevelop Continuous Integration processes for internal tools and modules.\nMentor developers in order for them to grow outside their comfort zone.\nSupport complex marketing websites with thousands of pages while maintaining reliability and quality.",
       "highlights": []
     },
     {
